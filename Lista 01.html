@@ -1,0 +1,603 @@
+<!-- Autora: Mariana Gregório Candido -->
+<!-- Última modificação: 12/02/2017 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Lista 01 - Engenharia de Software </title>
+		<link rel="stylesheet" type="text/css" href="listas.css">
+	</head>
+	<body>
+		<h1>Lista 1 - Engenharia de Software</h1>
+		<h3 onClick="show('aula02')">Aula II-Software</h3>
+		<div id="aula02" class="aula">
+		<p onClick="show('resp01')"> 1. Como abordar a característica que determina que o software não se desgasta? </p>
+		<div id="resp01" class="resp">
+			<p>Software não sofre desgaste com o tempo por não se tratar de um meio físico, apesar de na prática precisar de manutenção evolutiva para se readequar às funcionalidades do produto, e esta poder gerar novos erros e requerer mais manutenção corretiva.</p>
+			<a href="http://blog.tecsystem.com.br/index.php/erros-e-acertos-no-desenvolvimento-de-software/">Erros e acertos no desenvolvimento de software</a>
+		<p class="comentario">tem um pouco da aula 04</p>
+		</div>
+
+
+		<p onClick="show('resp02')"> 2. Cite exemplos de software do tipo pacote. </p>
+		<div id="resp02" class="resp">
+			<p>ERP (Enterprise Resource Planning), como o GNU Enterprise, e CRM (Customer Relationship Management), como o Salesforce - softwares pré-desenvolvidos que geralmente requerem pouca modificação</p>
+			<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Artigos/Artigo%20Concepts%20of%20Product%20Software%20Paving%20the%20Road%20for%20Urgently%20Needed%20Research%202007.pdf">Concepts of Product Software: Paving the Road
+for Urgently Needed Research (p. 3)</a>
+			<a href="http://portalerp.com/erp/5-entenda-erp"> O que é ERP</a>&nbsp;
+			<a href="https://br.hubspot.com/blog/o-que-e-software-de-crm-gestao-de-relacionamentos-com-o-cliente"> O que é software de CRM </a>
+ 		</div>
+
+
+		<p onClick="show('resp03')">3. Qual o entendimento sobre software personalizado ou construído sob demanda? </p>
+		<div id="resp03" class="resp">
+			<p>Produto de software desenvolvido para uma aplicação específica de acordo com os requisitos do usuário.</p>
+			<a href="https://pascal.computer.org/sev_display/index.action">SEVOCA (custom software)</a>
+		</div>
+
+
+		<p onClick="show('resp04')">4. Duas  são  as  classificações  para  tipos  de  software. Cite-as  e  apresente  exemplos para cada uma destas classificações. </p>
+		<div id="resp04" class="resp">
+			<p>Software de aplicação, como sistemas ERP e CAD e software de sistema, como sistemas operacionais e softwares de segurança. SGBD (Sistema de Gerenciamento de Banco de Dados) pode se encaixar nas duas definições.</p>
+		<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Artigos/Artigo%20Concepts%20of%20Product%20Software%20Paving%20the%20Road%20for%20Urgently%20Needed%20Research%202007.pdf">Xu classifica em 3 (p.5)</a>
+		<p class="comentario">compiladores????</p>
+		</div>
+
+
+		<p onClick="show('resp05')">5. Apresente  a  visão  geral  da  engenharia  de  software  definida por  três  fases  e  o  quê elas representam. Detalhe sua resposta.</p>
+		<div id="resp05" class="resp">
+			<p>A engenharia de software é responsável, de forma sistemática, quantificável, pelas fases de:
+		<ul>
+			<li><i>Definição</i> do que deve ser feito;</li>
+			<li><i>Desenvolvimento</i>, como os requisitos serão atendidos;</li>
+			<li><i>Manutenção</i> evolutiva para se adequar às mudanças.</li></p>
+		<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/SWEBOK/SWEBOKv3-1.pdf">SWEBOK (p.29)</a>&nbsp;
+<a href="https://pascal.computer.org/sev_display/index.action">SEVOCAB (software engineering & operation)</a>
+		</div>
+
+
+		<p onClick="show('resp06')">6. Apresente  uma  contraposição  para  este  mito  profissional  de  desenvolvimento  de 
+software “
+Assim que escrevermos o programa e o colocarmos em funcionamento nosso trabalho estará finalizado”.</p>
+		<div id="resp06" class="resp">
+			<p>Após a fase de implementação, é necessária a monitoria e controle do produto antes do encerramento do projeto, verificar seu funcionamento em relação aos requisitos, dar suporte e observar eventuais falhas.
+			</p>
+			<p class="comentario">+-Aula 04</p>
+		</div>
+
+
+		<p onClick="show('resp07')">7. Quais são as motivações para a Engenharia de Linha de produtos de software?</p>
+		<div id="resp07" class="resp">
+			<p>SPLs podem diminuir os custos de desenvolvimento e o tempo até finalizar o produto, além de poder melhorar a qualidade utilizando a mesma base em vários produtos customizados em diferentes projetos. </p>
+		<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Artigos/Artigo%20Managing%20variability%20in%20software%20product%20lines%202010.pdf">Managing variability in SPLs (p. 1)</a>
+		</div>
+
+
+		<p onClick="show('resp08')">8. Aborde  os  conceitos  de  variabilidade  no  tempo  e  no  espaço  e  o  de  variabilidade interna e externa para a Engenharia de Linhas de Produto de Software.</p>
+		<div id="resp08" class="resp">
+			<p>Variabilidade é o conjunto de diferenças em artefatos de uma SPL, podendo ocorrer em diferentes tempos, ou ao mesmo tempo de formas diferentes - variabilidade no espaço. É interna quando vísivel para o engenheiro, mas não para o cliente, e externa quando visível para o cliente.</p>
+		<a href="https://pascal.computer.org/sev_display/index.action">SEVOCAB (variability)</a>&nbsp;
+		<a href="http://pt.slideshare.net/diogenesrfreitas/um-estudo-sobre-o-gerenciamento-de-variabilidade-em-linha-de-produto-de-software">n respondeu, mas variante, etc</a>
+		</div>
+
+
+		<p onClick="show('resp09')">9. Qual o  objetivo  e os  subprocessos  da  engenharia  de  domínio? E da engenharia de aplicação?</p>
+		<div id="resp09" class="resp">
+			<p>A engenharia de domínio tem por objetivo coletar, organizar e armazenar experiências passadas com sistemas (ou subsistemas) de sofware em um domínio específico, na forma de core assets, e formular meios de reusá-los em novos sistemas. Subprocessos:
+		<ul>
+			<li><i>Gerenciamento do produto</i>, que trata geralmente dos aspectos não técnicos - questões econômicas, estratégia de mercado;</li>
+			<li><i>Engenharia de requisitos do domínio</i>, que identifica o que há de similar e variável nos requisitos;</li>
+			<li><i>Projeto do domínio</i>, que aborda todas as aplicações da SPL para construir a arquitetura de referência;</li>
+			<li><i>Realização do domínio</i>, que detalha melhor a arquitetura e a implementação dos componentes reusáveis;</li>
+			<li><i>Testes do domínio</i>, responsável pela verificação e validação dos componentes reusáveis.</li>
+		</ul></p>
+		<p>A engenharia de aplicação é a etapa seguinte, tem por objetivo desenvolver o produto com base nos core assets construídos na engenharia de domínio. Subprocessos:
+		<ul>
+			<li><i>Engenharia de requisitos de aplicação</i>, que reúne todas as atividades para identificar os requisitos;</li>
+			<li><i>Projeto da aplicação</i>, produção da arquitetura específica, com base na arquitetura de referência, selecionando e configurando as partes específicas do produto;</li>
+			<li><i>Realização da aplicação</i>, seleciona e configura (desenvolve) as aplicações específicas;</li>
+			<li><i>Testes da aplicação</i>, atividades necessárias para validar e verificar a aplicação em relação à sua especificação.</li>
+		</ul></p>
+		<a href="http://pt.slideshare.net/diogenesrfreitas/um-estudo-sobre-o-gerenciamento-de-variabilidade-em-linha-de-produto-de-software">Gerenciamento de variabilidade em SPLs (p. 26-28)</a>
+		</div>
+
+
+		<p onClick="show('resp10')">10. Pesquise  as  abordagens  utilizadas  na  ES  baseado  em  reuso  e  detalhe  ao  menos 
+duas destas.</p>
+		<div id="resp10" class="resp">
+			<p><ul>
+				<li><i>Design patterns</i>: reuso de projetos abstratos, para evitar as limitações de executáveis criados com requisitos específicos. As primeiras abordagens desse tipo foram algoritmos fundamentais na década de 70, depois pilhas, árvores e listas, em 80, e mais recentemente os padrões de projeto. Estes padrões devem ter um nome que seja uma referência significativa para si, uma descrição da área do problema em que pode ser aplicado, uma descrição da solução das partes da solução -  os relacionamentos entre classes e objetos na solução e uma declaração dos resultados e compromissos de sua aplicação.</li>
+				<li><i>Reuso do sistema de aplicações</i>: configuração de um sistema inteiro para um ambiente específico - SPLs, uma arquitetura de núcleo comum (arquitetura de referência), especialmente projetada para ser adaptada a necessidades específicas de clientes diversos, e componentes compartilhados - ou integração de dois ou mais sistemas para criar uma nova aplicação - COTS (commercial off-the-shelf) </li>
+			</ul></p>
+			<p class="comentario">Sommerville (p. 279 e 283-284)</p>
+			<a href="https://pascal.computer.org/sev_display/index.action">SEVOCA (COTS)</a>
+		</div>
+
+
+		<p onClick="show('resp11')">11. Forneça alguns motivos pelos quais você não recomendaria o reuso de software.</p>
+		<div id="resp11" class="resp">
+			<p>Os componentes de reuso devem ser encontrados em uma biblioteca, compreendidos e talvez adaptados, as técnicas de catalogação ainda são imaturas, isto e a falta de certeza se há de fato o componente que o engenheiro está buscando pode aumentar o tempo de execução do projeto, além dos custos para criar a biblioteca. No caso de o código-fonte não estar disponível, o aumento de custos pode acontecer nas manutenções, por os componentes se tornarem cada vez mais incompatíveis.</p>
+			<p class="comentario">Sommerville (p. 277)</p>
+		</div>
+
+
+		<p onClick="show('resp12')">12. Comente   sobre   a   relação   entre   custos   e   reuso   de   componentes.   Avalie   a 
+proporcionalidade, considerando custos e reuso.</p>
+		<div id="resp12" class="resp">
+			<p>O reuso de componentes pode diminuir o tempo de apresentação do sistema ao mercado, contanto que não sejam necessárias alterações demais nos componentes reusados, além disto o custo é mais previsível, por parte do projeto já ser conhecida. Porém, os custos com manutenção podem ser mais altos se o código-fonte não estiver disponível.</p>
+			<p class="comentario">Sommerville (p. 277)</p>
+		</div>
+
+		</div>
+<!----------------------FIM DA AULA 02----------------------->
+		<hr></hr>
+<!--------------------COMEÇO DA AULA 03---------------------->
+
+		<h3 onClick="show('aula03')">Aula III-Processo. Projeto. Produto. Métricas. Ferramentas CASE.</h3>
+		<div id="aula03" class="aula">
+			<p onClick="show('resp13')">13. Conceitualmente, segundo características gerais, como se define processo e projeto?</p>
+			<div id="resp13" class="resp">
+				<p>Processo e projeto são conjuntos de recursos inter-relacionados utilizados para se atingir um objetivo, o processo tem seus objetivos fixados temporariamente e é contínuo e repetitivo, o projeto é temporário e tem um objetivo único e específico, fora das atividades regulares do desenvolvedor.</p>
+			<p class="comentario">Da aula, SEVOCAB não ajudou</p>
+			</div>
+			<p onClick="show('resp14')">14.Com  base  em qualquer  processo  de  software  de  sua  escolha,  apresente  os elementos  para  a  entrada  deste  processo,  os  critérios  para  que  se  realize  a transformação, os critérios que permitem a saída e a saída.</p>
+			<div id="resp14" class="resp">
+				<p>Processo de software: gerenciamento de requisitos<br />
+				Elementos de entrada: requisitos<br/>
+				Critérios para transformação: verificar se estão completos e de acordo com o plano estratégico<br />
+				Critérios que permitem a saída: requisitos estarem de acordo com o plano estratégico<br/>
+				Saída: requisitos reavaliados</p>
+			</div>
+			<p onClick="show('resp15')">15. Para se reconhecer um processo disciplinado existem alguns fatores. Destaque um deles e detalhe-o.</p>
+			<div id="resp15" class="resp">
+				<p>Os gestores de um processo disciplinado devem ser capazes de medí-lo, através de métricas de controle, que medem tempo e pessoas envolvidas para 
+				realização de um processo, por exemplo.</p>
+				<p class="comentario">Da aula, nada no sommerville, sevocab, swebok</p>
+			</div>
+			<p onClick="show('resp16')">16. Comente sobre a integração dos processos de software de engenharia e gerenciais.</p>
+			<div id="resp16" class="resp">
+				<p>Processos de engenharia de software são afetados pelos processos gerenciais conforme esses, por exemplo, definem o quadro em que os processos de engenharia 
+				de software ocorrerão, assim como políticas de engenharia de software devem ser estabelecidas para um bom gerenciamento, políticas para, por exemplo, o
+				desenho de software e sua construção e monitoramento. Processos de gerenciamento também incluem o de recursos humanos, contratar e administrar os
+				indivíduos responsáveis pelos processos de engenharia de software, tanto a nível de projeto quanto no longo  para a empresa.</p>
+				<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/SWEBOK/SWEBOKv3-1.pdf">SWEBOK (p.134)</a>
+			</div>
+			<p onClick="show('resp17')">17. Como é possível relacionar o ciclo de vida do projeto e o do produto de software?</p>
+			<div id="resp17" class="resp">
+				<p>O ciclo de vida do projeto pode ser dividido em cinco fases: Início, planejamento, implementação, monitoria e controle e encerramento; é na fase 
+				de implementação que acontece o ciclo de vida do produto, do planejamento (agora do produto) à sua implantação, onde volta-se para o ciclo do projeto,
+				na fase de monitoria e controle.</p>
+				<p class="comentario">Mais ou menos dos slides + Sommerville (p. 44)</p>
+			</div>
+			<p onClick="show('resp18')">18. Como devem ser aplicadas as métricas de software? Detalhe sua resposta.</p>
+			<div id="resp18" class="resp">
+				<p>Métricas de software descrevem de forma bem específica como o produto, os processos ou os artefatos relacionados devem ser medidos, podem ser de controle, geralmente associadas aos processos de software, como por exemplo conferir se os prazos estão sendo atendidos não apenas nas etapas finais dos processos, ou preditivas, associadas ao produto, como avaliar um código pela quantidade de linhas ou padronizar limite de erros no produto.</p>
+				<a href="http://www.jcoltro.com.br/project2000/pmbok.pdf">PMBOK (p. 81)</a>&nbsp;<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2003%20Processo%2C%20Projeto%20e%20Produto%20de%20Software%20v1.0.pdf">Aula 3 (slide 25-27)</a>
+			</div>
+			<p onClick="show('resp19')">19. Quais possíveis fatores são limitadores ao uso de ferramentas CASE?</p>
+			<div id="resp19" class="resp">
+				<p>A engenharia de software é essencialmente baseada no processo criativo, as tentativas de aliar inteligência artificial às ferramentas CASE para 
+				suprir essa parte ainda não foram bem sucedidas; além disso, costuma ser uma atividade de equipe: os engenheiros de software passam boa parte do tempo
+				interagindo entre si, coisa que as ferramentas CASE também não ajudam muito.</p>
+				<p class="comentario">Sommerville (p. 56)</p>
+			</div>
+			<p onClick="show('resp20')">20. Considerando os tipos de CASE e seus exemplos, pesquise e apresente uma tecnologia CASE para cinco processos relevantes da engenharia de software. (apresente o nome, fabricante, data de criação, principais usuários).</p>
+			<div id="resp20" class="resp">
+				<p>Easy RM, da Cybernetic Intelligence GmbH para gerenciamento de requisitos;</p>
+				<a href="http://engenhariadesoftwarebrasil.blogspot.com.br/2007/11/ferramentas-de-apoio-engenharia-de.html">CASE para requisitos</a>
+				<p class="comentario">isso não parece importante, né</p>
+			</div>
+		</div>
+		
+<!----------------------FIM DA AULA 03----------------------->
+		<hr></hr>
+<!--------------------COMEÇO DA AULA 04---------------------->
+
+		<h3 onClick="show('aula04')">Aula IV-Gerenciamento de Projetos. Gestão da Qualidade de Software.</h3>
+		<div id="aula04" class="aula">
+		<p onClick="show('resp21')">21. Realize   uma   pesquisa   no   site   do  <a href="https://www.sei.cmu.edu">SEI (Software   Engineering   Institute)</a> 
+		para buscar a última versão do CMMI. Verifique quais são as áreas de processo do nível 2.</p>
+			<div id="resp21" class="resp">
+				<p><ul>
+					<li><i>Gerenciamento de configuração</i>: área responsável por direcionar de forma técnica e administrativa a configuração, identificando e documentando as características físicas e funcionais dos itens de configuração - os artefatos;</li>
+					<li>Measurement and Analysis;</li>
+					<li>Process and Product Quality Assurance;</li>
+					<li>Requirements Management;</li>
+					<li>Supplier Agreement Management;</li>
+					<li>Service Delivery</li>
+					<li>Work Monitoring and Control</li>
+					<li>Work Planning</li>
+				</ul></p>
+				<a href="http://www.sei.cmu.edu/reports/10tr034.pdf">CMMI v1.3</a>
+			</div>
+		<p onClick="show('resp22')">22. Realize outra pesquisa no site da <a href="https://www.softex.br">SOFTEX</a> para buscar a última 
+versão do MPS.Br e avaliar os processos do nível G. </p>
+			<div id="resp22" class="resp">
+				<p>Nível G: Parcialmente gerenciado. Processos: Gerência de projetos, que diz que se deve estabelecer e manter planos que definem as responsabilidades, atividades e recursos do projeto, assim como prover informações sobre seu andamento, e gerência de requisitos, que verifica inconsistências entre os requisitos, os planos e os produtos de trabalho(?) do projeto.</p>
+				<a href="http://www.softex.br/wp-content/uploads/2016/04/MPS.BR_Guia_Geral_Software_2016-com-ISBN.pdf?x15632">MPS.BR (p. 24)</a>
+			</div>
+		<p onClick="show('resp23')">23. Outra  pesquisa  para  verificar  as  novidades  da  5ª  edição  do  Guia  PMBOK. 
+Apresente as mudanças mais significativas em relação a 4ª versão.</p>
+			<div id="resp23" class="resp">
+				<p>Foram definidos mais 5 processos e uma nova área de conhecimento, e alguns processos foram remanejados quanto à área.</p>
+				<a href="http://www.projectlab.com.br/blog/index.php/home/informacoes-valiosas-sobre-as-mudancas-do-pmbok-5a-edicao/"> blog aleatório </a>
+			</div>
+		<p onClick="show('resp24')">24. Quanto  ao  gerenciamento  de  projetos,  mencione  a  área  de  conhecimento  que  se 
+relaciona com todos os grupos de processos. Aborde o motivo desta relação.</p>
+			<div id="resp24" class="resp">
+				<p>A gerência da integração se relaciona com as outras oito áreas, pois cuida do desenvolvimento e execução do projeto e do controle geral de mudanças - agrega os resultados das outras etapas de planejamento, construindo uma documentação consistente, executa todas as atividades nele envolvidas e coordena as mudanças do projeto inteiro - para tanto deve integrar todas as áreas de conhecimento.</p>
+				<a href="http://www.jcoltro.com.br/project2000/pmbok.pdf">PMBOK 2000 (p. 34)</a>
+			</div>
+		<p onClick="show('resp25')">25. Para  o  modelo  de  maturidade  CMMI,  identifique  as  práticas  de  uma  área  de 
+processos qualquer do nível 2 do modelo. Verifique como estas se integram. Faça a mesma coisa para uma área de processo qualquer do nível 3.</p>
+			<div id="resp25" class="resp">
+				<p><i>Gerenciamento de configuração</i>: área responsável por direcionar de forma técnica e administrativa a configuração, identificando e documentando as características físicas e funcionais dos itens de configuração - os artefatos;</p>
+				<p class="comentario">SEVOCAB (configuration management)</p>
+			</div>
+		<p onClick="show('resp26')">26. Utilizando  a  abordagem  E-P-S,  considere  elementos  de  entrada  e  saída  para  os 
+processos  identificados  no  nível  2  do  modelo  CMMI.  Apresente  a  integração entre os processos.</p>
+			<div id="resp26" class="resp">
+				<p>Entrega de serviços:
+				<ul>
+					<li><b>Entrada:</b> acordo/contrato estabelecido com o cliente, através da análise de acordos semelhantes e da informação disponível sobre os serviços;</li>
+					<li><b>Processo:</b> é definida a abordagem para entrega de serviços, como plano de comunicação, formato dos relatórios, papéis e responsabilidades, e então o acompanhamento da disponibilidade dos recursos (humanos, ferramentas, processos, etc) com relatórios;</li>
+					<li><b>Saída:</b> entrega dos serviços combinados, que são analisados, revisados e atualizados.</li>
+				</ul></p>
+				<a href="http://www.cmmiconsultantblog.com/cmmi-faqs/what-is-service-delivery-sd-process-area-in-cmmi-svc-and-how-it-differs-from-work-planning-wp/">blog sobre CMMI</a>
+			</div>
+		<p onClick="show('resp27')">27. Considerando as áreas de processos, como se verificam as que estão alocadas aos níveis  F  e  G  do  MPSBR  em  relação  ao  CMMI?  Apresente  possíveis  motivos 
+pelos quais o MPSBR foi definido desta forma.</p>
+			<div id="resp27" class="resp">
+				<p>.</p>
+			</div>
+		<p onClick="show('resp28')">28. Considerando o Projeto a ser desenvolvido por você e seu grupo, elabore o Termo de  Abertura  do  Projeto (Project  Charter)
+apresentando  os seguintes  itens  neste termo: 1. Nome e código do projeto. 2. Patrocinador e área. 3. Gerente do Projeto e  possível  equipe.  4.  Resumo  executivo  (problema  organizacional  deve  ser 
+considerado). 5. Objetivos e metas. 6. Escopo resumido. 7. Exclusões do escopo. 8.  Envolvidos.  9.  Estimativa  inicial  de  custos  e  datas.  10.  Recursos  necessários 
+(visão  macro).  Pode  se  identificar no  guia  PMBOK maiores  detalhes  sobre  este entregável ou em site exclusivo do editor deste <a href="www.brasil.pmi.org">guia</a> 
+.</p>
+			<div id="resp28" class="resp">
+				<p>.</p>
+			</div>
+		<p onClick="show('resp29')">29. Considerando  o  Projeto  a  ser  desenvolvido  por você  e seu  grupo,  elabore  o Cronograma  do  Projeto  com  base  no  que  for  definido  no  Termo  de  Abertura  do 
+Projeto utilizando ferramenta específica para elaboração do cronograma, como o MS-Project ou o Gantter. (Obs. Você pode elaborar uma versão inicial, preliminar
+do cronograma e conforme se realizar a elicitação de requisitos, gerar nova versão do cronograma). (Obs2. Atente para o devido Gerenciamento de configuração dos 
+artefatos).</p>
+			<div id="resp29" class="resp">
+				<p>.</p>
+			</div>
+		<p onClick="show('resp30')">30. Considerando o Projeto a ser desenvolvido por você e seu grupo, elabore o Plano de Gerenciamento do Projeto com base no que for definido no Termo de Abertura 
+do  Projeto  e  no  cronograma.  O  plano  pode  ser  desenvolvido  utilizando-se  MS-Word em template livre desde que contemple, no mínimo, as seguintes seções: 1. 
+Propósito  do  projeto,  2. Escopo  preliminar,  3.  Estimativas  (tamanho,  esforço, custo),   4.   Papéis   e   responsabilidades,   5.   Metodologia   a   ser   utilizada,   6. 
+Gerenciamento   de   riscos,   7.   Gerenciamento   de   fornecedor,   8.   Plano   de Treinamento,  9.  Mecanismos  de  controle,  acompanhamento  e  divulgação  de 
+resultados,  10.  Critérios  de  encerramento  do  projeto. (Obs.  Você  pode  elaborar uma  versão  inicial,  preliminar  do  Plano  e  conforme  se  realizar  outras  atividades 
+do   projeto,   gerar   nova   versão   do   Plano).   (Obs2.   Atente   para   o   devido Gerenciamento de configuração dos artefatos).</p>
+			<div id="resp30" class="resp">
+				<p>.</p>
+			</div>
+		</div>
+<!----------------------FIM DA AULA 04----------------------->
+		<hr></hr>
+<!--------------------COMEÇO DA AULA 05---------------------->
+
+		<h3 onClick="show('aula05')">Aula V-Métodos Ágeis para desenvolvimento de software (SCRUM, FDD).</h3>
+		<div id="aula05" class="aula">
+			<p onClick="show('resp31')">31. Quais são os princípios dos métodos ágeis? Poderia elaborar outro? Qual?</p>
+			<div id="resp31" class="resp">
+					<p><ul>
+						<li><i>Envolvimento do cliente</i>, que devem fornecer e priorizar novos requisitos e avaliar as iterações do sistema;</li>
+						<li><i>Entrega incremental</i>, software entregue em incrementos, com o cliente especificando o que deve ser incluído em cada um deles;</li>
+						<li><i>Pessoas, não processo</i>, habilidades individuais são mais exploradas, membros da equipe devem desenvolver sua própria maneira de trabalhar, sem processos prescritivos;</li>
+						<li><i>Aceite as mudanças</i>, os requisitos irão mudar e o sistema deve estar preparado para lidar com isso;</li>
+						<li><i>Mantenha a simplicidade</i>, trabalhe ativamente para eliminar a complexidade do sistema.</li>					
+					</ul>
+			Um sexto princípio poderia ser o uso de metodologias ágeis como um complemento aos métodos existentes, e não um modelo separado, completo.
+			</p>
+			<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2005%20Metodologias%20%C3%81geis%20v1.0.pdf">Aula 5 (slide 8)</a>
+			<p class="comentario">Sommerville (p. 263)</p>
+			</div>
+			<p onClick="show('resp32')">32. Quando você seria contra a utilização de um método ágil para o desenvolvimento de software?</p>
+			<div id="resp32" class="resp">
+				<p>Quando o cliente não possui a disponibilidade necessária para participar do desenvolvimento do sistema ou quando os integrantes da equipe do projeto não se integram suficientemente bem.</p>
+				<p class="comentario">Sommervile (p. 263)</p>
+			</div>
+			<p onClick="show('resp33')">33. Quais dos fatores humanos você considera que deve ser mais enfatizado para que se defina melhor uma equipe ágil? Por quê?</p>
+			<div id="resp33" class="resp">
+			<p>A colaboração, em métodos ágeis os processos são mais informais e os requisitos mais voláteis, portanto uma boa comunicação e integração da equipe entre si e com o cliente é indispensável, e a habilidade na tomada de decisão, visto que estes métodos são baseados nas habilidades próprias da equipe.</p>
+			<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2005%20Metodologias%20%C3%81geis%20v1.0.pdf">Aula 5 (slide 9)</a>
+			</div>
+			<p onClick="show('resp34')">34. Qual  sua  interpretação  ao  se  considerar  a  relação  entre  "agilidade"  e  "entregar 
+pequenas versões"?</p>
+			<div id="resp34" class="resp">
+					<p>Ao entregar o software em incrementos, em iterações curtas, o cliente receberá cada iteração em um prazo muito menor do que o que seria necessário para todas as etapas de desenvolvimento de software até um produto final.</p>
+			<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2005%20Metodologias%20%C3%81geis%20v1.0.pdf">Aula 5 (slide 10)</a>
+			</div>
+			<p onClick="show('resp35')">35. Comente  sobre  os  conceitos  de  little-m  methodology  e  Big-M  methodology apresentados por Cockburn.</p>
+			<div id="resp35" class="resp">
+					<p>A grande diferença entre os dois conceitos está no escopo: little-m methodology descreve poucas técnicas e poucos papéis, enquanto big-m tenta descrever o máximo possível.</p>
+				<a href="https://courses.cs.ut.ee/MTAT.03.243/2015_spring/uploads/Main/cockburn.pdf">Selecting a project's methodology</a>&nbsp;<a href="http://alistair.cockburn.us/Methodology+space">Methodology Space</a>
+			</div>
+			<p onClick="show('resp36')">36. Boehn apresenta uma visão de plan-driven development. Compare esta visão com um dos métodos ágeis.</p>
+			<div id="resp36" class="resp">
+					<p>Plan-driven development requere uma boa documentação dos processos envolvidos e que sejam seguidos planos pré-concebidos de forma mais rígida, enquanto métodos ágeis exigem uma equipe mais adaptável, hábil para tomadas de decisões que não sigam necessariamente os planos de métodos convencionais, e a documentação tem um valor menor.</p>
+				<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Artigos/Artigo%20Get%20Ready%20for%20Agile%20Methods_with%20Care.pdf">Get ready for agile methods</a>
+				<p class="comentario">falta comparar com scrum, fdd, xp</p>
+			</div>
+			<p onClick="show('resp37')">37. Considere as visões de Boehn e Cockburn para abordar a relação dos usuários aos métodos  ágeis.  Aborde  também  a  questão  de  gerenciamento  de  requisitos  e  os métodos ágeis</p>
+			<div id="resp37" class="resp">
+					<p>Boehn diz que os usuários devem estar bem dispostos a colaborar (cockburn tb?); o gerenciamento de requisitos é feito em todas as iterações do projeto.</p>
+			</div>
+			<p onClick="show('resp38')">38. Considere três processos do SCRUM, considere quais atores estão ligados a estes 
+processos e aborde esta relação.</p>
+			<div id="resp38" class="resp">
+				<p><ul>
+					<li><i>PreGame</i>: fase dividida em planejamento e arquitetura, o responsável pelo planejamento é o Product Owner, o representante do cliente, que sabe as propriedades e funcionalidades mais importantes do projeto e as define no backlog, então é feita a parte de arquitetura pelo scrum team, que revisa o backlog e verifica o que deve ser mudado para a implementação;</li>
+					<li><i>Sprint Retrospective Meeting</i>: scrum master e scrum team se reunem ao fim de uma sprint para avaliar se e quais as tarefas foram feitas apropriadamente e como tornar os processos mais eficientes;</li>
+					<li><i>Stand Up Meeting/Daily Meeting</i>: reunião rápida (cerca de 30 minutos?) cada membro do scrum team informa o que realizou no dia (ou no dia anterior) e se surgiram novos problemas.</li>
+				</ul></p>
+				<a href="http://scrummethodology-org.etltools.net/scrum-phases.html">SCRUM Methodology</a>
+			</div>
+			<p onClick="show('resp39')">39. Quais  são  as  três  fases  do  SCRUM?  Explique  a  relação  do Sprint com  a abordagem PDCA</p>
+			<div id="resp39" class="resp">
+					<p>Adaptação, a Planning Phase, onde é definido um backlog, as prioridades e prazos gerais, gestão de riscos e estimativa de custos; as iterações, Sprints, onde os fluxos são cíclicos e é aplicado o PDCA (Plan, Do, Check, Act), Plan - cada Sprint possui uma reunião de planejamento onde é definido o escopo inicial da Sprint, que dura até um mês, Do - o que é realizado durante o tempo da iteração, Check - são realizadas reuniões diárias de 15 minutos, onde diferentemente dos projetos tradicionais em cascata, desvios podem ser ajustados imediatamente, além deste há o Review Meeting em que os resultados finais da Sprint são avaliados e o Product Backlog é reajustado, e Act - após o review meeting é realizado o retrospective meeting, onde são definidas ações para melhorar efetivamente os processos, e encerramento, a Closure Phase, que envolve tarefas como treinamento, testes gerais e marketing, preparando o produto para lançamento.</p>
+			<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2005%20Metodologias%20%C3%81geis%20v1.0.pdf">Aula 05 (Slides 17-23)</a>&nbsp;<a href="https://micajeho.wordpress.com/2011/11/18/scrum-e-o-ciclo-do-pdca/">blog aleatório</a>
+			</div>
+			<p onClick="show('resp40')">40. Comente o seu entendimento sobre a realização de um sprint. Como isto ocorre?</p>
+			<div id="resp40" class="resp">
+				<p>Sprints devem durar no máximo um mês, mas geralmente duram de uma a duas semanas, elas são as iterações, a parte cíclica do projeto, ao final de cada sprint, um incremento do projeto é entregue ao cliente, o progresso atual é apresentado para o product owner e líder e time avaliam os processos envolvidos na sprint, ambos para atualizar o product backlog e começar uma nova sprint,  então é definido um ovo sprint backlog, que é divido em sessões (de 4  a 6), conforme o time seleciona as tarefas que estarão no escopo da sprint de acordo com as prioridades definidas (e constantemente revisadas) pelo product owner, e durante as iterações são realizados daily meetings, rápidos, de cerca de 15 minutos, em que cada membro da equipe apresenta o que realizou no último dia de trabalho e eventuais problemas, que caso surjam, são discutidos imediatamente.</p>
+			</div>
+			<p onClick="show('resp41')">41. Comente sobre o fluxo de processos linear e iterativo que podem ser verificados no FDD.</p>
+			<div id="resp41" class="resp">
+					<p>O FDD é dividido em cinco processos principais, sendo três deles - DMA (Desenvolver Modelo Abrangente), CLF (Construir a Lista de Funcionalidades), PPF (Planejar Por Funcionalidade) - da parte de concepção e planejamento, linear, e dois da parte de construção, iterativa, formada pelo DPF (Detalhar Por Funcionalidade) e pelo CPF (Construir Por Funcionalidade).</p>
+			</div>
+			<p onClick="show('resp42')">42. Detalhe o DPF. E o CPF.</p>
+			<div id="resp42" class="resp">
+				<p>DPF e CPF são os dois processos da fase iterativa do FDD - a fase de construção.</p>
+				<p><ul>
+					<li><i>Detalhar Por Funcionalidade</i>: processo realizado para todas as funcionalidades do projeto, nele um programador-chefe fica responsável por uma funcionalidade ou por um grupo de funcionalidades que estejam ligadas às mesmas classes, chamado de Pacote de Trabalho, e atualiza o modelo de dados abrangente criado na fase DMA com tipo de retorno dos métodos, tipos de dados, nomes dos métodos e outros artefatos que se mostrem necessários nesta fase;</li>
+					<li><i>Construir Por Funcionalidade</i>: os desenvolvedores (donos de classe?) desenvolvem os métodos para cada pacote de trabalho feito na etapa anterior, o programador-chefe inspeciona, com membros da equipe ou de fora (mas parte do projeto) se necessário, e então o dono revisa e verifica sua classe através da inspeção do código e de testes de unidade.</li>
+				</ul></p>
+				<a href="http://www.fattocs.com/files/pt/livro-apf/citacao/CristianeRCunha-CristinaDOFilipakis-2012.pdf">Proposta de Utilização de FDD e APF para Melhoria do Processo de Software </a>
+			</div>
+			<p onClick="show('resp43')">43. Considerando o Projeto a ser desenvolvido por você e seu grupo, e o método ágil que  seu  grupo  deverá  seguir  para  a  realização  do  projeto,  elabore  os  principais entregáveis  a  partir  destas  metodologias  ágeis  para  o  seu  projeto.  Importante: forneça  uma  visão  geral  do  produto de  software  que  deveria  ser  construído
+e trabalhe  na  funcionalidade  (ou  funcionalidades)  específica(s)  definida  por  seu grupo. Justifique a escolha dos artefatos elaborados.</p>
+			<div id="resp43" class="resp">
+					<p>.</p>
+			</div>
+		</div>
+<!----------------------FIM DA AULA 05----------------------->
+		<hr></hr>
+<!--------------------COMEÇO DA AULA 06---------------------->
+
+		<h3 onClick="show('aula06')">Aula VI - Modelos de ciclo de vida do software (Cascata, Iterativo e Incremental).</h3>
+		<div id="aula06" class="aula">
+			<p onClick="show('resp44')">44. Uma   das   vantagens   do   modelo   Cascata   é   disciplinar   as   atividades   do 
+desenvolvimento de software. Você concorda?</p>
+			<div id="resp44" class="resp">
+				<p>Duas características de processos disciplinados são a existência de documentação para todo o projeto e mecanismos e procedimentos para usá-lo, e no modelo em cascata é produzida documentação a cada fase, e estas fases seguem um padrão.</p>
+				<p class="comentario">Sommerville (p. 45)</p>
+				<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2003%20Processo%2C%20Projeto%20e%20Produto%20de%20Software%20v1.0.pdf">Aula 03 (slide 14)</a>
+			</div>
+			<p onClick="show('resp45')">45. Em qual cenário você adotaria o modelo de ciclo de vida Cascata?</p>
+			<div id="resp45" class="resp">
+				<p>Por seguir um fluxo linear, este modelo só pode ser aplicado em um cenário com requisitos rígidos e totalmente compreendidos desde a etapa inicial.</p>
+				<p class="comentario">Sommerville (p. 45)</p>
+			</div>
+			<p onClick="show('resp46')">46. Quais  impactos  podem  ser  citados  devido  a  rigidez  imposta  pelo  ciclo  de  vida 
+Cascata?</p>
+			<div id="resp46" class="resp">
+					<p>Mudanças nos requisitos implicam na volta às fases iniciais do projeto.</p>
+			</div>
+			<p onClick="show('resp47')">47. Porque,  possivelmente,  os  projetos  de  software  que  adotam  o  ciclo  de  vida 
+cascata podem ser mais caros?</p>
+			<div id="resp47" class="resp">
+				<p>Quaisquer mudanças nos requisitos em fases avançadas do projeto requerem muito tempo, gasto para refazer as etapas anteriores.</p>
+			</div>
+			<p onClick="show('resp48')">48. De acordo com as necessidades dos clientes, como os requisitos de software devem ser tratados para serem implementados em iterações sucessivas?</p>
+			<div id="resp48" class="resp">
+				<p>Devem ser definidas as prioridades dos requisitos, de forma que os primeiros incrementos resolvam os requisitos mais críticos primeiro.</p>
+				<p class="comentario">Sommerville (p. 48)</p>
+			</div>
+			<p onClick="show('resp49')">49. As  atividades  de  testes  são  evidenciadas  nos  modelos  de  ciclo  de  vida.  No ciclo 
+Cascata  V  são  explicitados  diversos  tipos  de  testes.  Qual  a  importância  destes tipos e deste ciclo? Você o usaria somente em algum tipo específico de projeto de software? Qual?</p>
+			<div id="resp49" class="resp">
+				<p>O modelo cascata V também exige requisitos bem definidos no início do projeto, pois ele também é linear. Seu lado direito evidencia as fases de teste: unidade (relacionada a geração de código e ao projeto dos componentes), integração (relacionado ao projeto dos componentes e da arquitetura), sistema (relacionado ao projeto da arquitetura e aos requisitos) e aceitação (relacionado aos reuqisitos).</p>
+				<a href="http://www.devmedia.com.br/introducao-ao-modelo-cascata/29843">devmedia</a>&nbsp;<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2006%20Modelos%20de%20Ciclo%20de%20Vida%20do%20Software%20v1.0.pdf">Aula VI (slide 14)</a>
+			</div>
+			<p onClick="show('resp50')">50. Como tratar os testes num projeto de software? Em que fase e em que condições eles devem ser planejados e especificados?</p>
+			<div id="resp50" class="resp">
+				<p>Os testes acontecem na fase de implementação, eles não devem tratar o sistema como uma unidade simples e monolítica, e sim testá-lo de forma iterativa, mas primeiro os componentes, então o sistema e, por fim, testar a aceitação.</p>
+				<p class="comentario">Sommerville (p. 52-53)</p>
+			</div>
+			<p onClick="show('resp51')">51. Considerando  o  Cascata  V  como  uma  extensão  do  Cascata?  Como os  dois abordam a questão do fluxo de processo? Em que sentido um pode ser melhor que o outro?</p>
+			<div id="resp51" class="resp">
+				<p>Ambos são uma forma linear de ciclo de vida, o cascata V apenas evidencia como as fases de teste se relacionam com as outras fases de desenvolvimento do projeto, sendo nesse sentido melhor para especificar a que ponto do ciclo se deve voltar caso se verifiquem problemas em alguma fase de teste.</p>
+			</div>
+			<p onClick="show('resp52')">52. Justifique  sua  resposta  ao  associar  qual  dos  modelos  de  ciclo  de  vida  você aplicaria para cada uma das situações abaixo:<br />
+&emsp;a. Construção de um sistema de software que controla um antibloqueador de freios de automóveis <br />
+&emsp;b. Sistema  da  contabilidade  de  uma  universidade  que  substitui  um  sistema existente <br />
+&emsp;c. Sistema  interativo  que  permite  ao  usuário  encontrar  os  horários  de  trens por meio de terminais que estão presentes nas estações </p>
+			<div id="resp52" class="resp">
+				<p>b - evolucionário (já tem um sistema presente)</p>
+			</div>
+			<p onClick="show('resp53')">53. Quais são as vantagens de oferecer as visões estática e dinâmica como se verifica 
+no Processo Unificado?</p>
+			<div id="resp53" class="resp">
+				<p>A perspectiva estática dos workflows mostra a evolução das atividades realizadas no processo, enauqnto a visão dinâmica das fases mostra a evolução ao longo do tempo.</p>
+				<p class="comentario">Sommerville (p. 55)</p>
+			</div>
+			<p onClick="show('resp54')">54. Considerando  o  Projeto  a  ser  desenvolvido  por você  e seu  grupo,  defina  e justifique qual o modelo de ciclo de vida será escolhido. Mantenha a definição e a justificativa no Plano do Projeto.</p>
+			<div id="resp54" class="resp">
+					<p>.</p>
+			</div>
+		</div>
+<!----------------------FIM DA AULA 06----------------------->
+		<hr></hr>
+<!--------------------COMEÇO DA AULA 07---------------------->
+
+		<h3 onClick="show('aula07')">Aula VII - UML.</h3>
+		<div id="aula07" class="aula">
+			<p onClick="show('res55')">55. A  ação  de  modelar  é  pertinente  a  diversos  campos  de  engenharia.  A  que corresponde  a  modelagem?  Quais  resultados  é  capaz  de  gerar?  Quais  são  as vantagens com esta ação?</p>
+			<div id="resp55" class="resp">
+				<p>A modelagem é uma simplificação da realidade, modela dimensões: dados, funções, comportamentos. Permite melhor visualização, compreensão e documentação do sistema real.</p>
+				<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2007%20UML%20v1.0.pdf">Aula 7 (slide 5)</a>
+			</div>
+			<p onClick="show('res56')">56. Quais os quatro principais objetivos da UML?</p>
+			<div id="resp56" class="resp">
+				<p>Compreender melhor o sistema que está sendo desenvolvido; visualizá-lo; dcumentar as tomadas de decisão e especificar o comportamento ou a estrutura do sistema.</p>
+				<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2007%20UML%20v1.0.pdf">Aula 7 (slide 6)</a>
+			</div>
+			<p onClick="show('res57')">57. Apresente os quatro elementos essenciais da UML, exemplificando.</p>
+			<div id="resp57" class="resp">
+				<p><ul>
+					<li><i>Estruturais</i>: classes, interfaces, colaborações, casos de uso, classes ativas, relacionamentos, componentes e nós;</li>
+					<li><i>Comportamentais</i>: Interação e máquina de estado;</li>
+					<li><i>Extensão e anotação</i>: anotações (?)</li>
+					<li><i>Agrupamento</i>: pacotes.</li>
+				</ul></p>
+			</div>
+			<p onClick="show('res58')">58. Como  relacionar  as  visões  e  os  diagramas  previstos  na  UML  com  o  modelo  de ciclo de vida Cascata Simples?</p>
+			<div id="resp58" class="resp">
+				<p>.</p>
+			</div>
+			<p onClick="show('res59')">59. Os  diagramas  da  UML  representam  graficamente  as  diferentes  perspectivas  e  a projeção de um sistema de software. Comente sobre o diagrama de classes e o de objetos.</p>
+			<div id="resp59" class="resp">
+				<p>O diagrama de classes é a espinha dorsal da maior parte das análises orientadas a objetos, ele representa as entidades e seus relacionamentos, enquanto o de objetos é uma instância deste.</p>
+				<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2007%20UML%20v1.0.pdf"> Aula 7 (slide 19-20)</a>
+			</div>
+			<p onClick="show('res60')">60. Por que se torna mais fácil modelar classes e objetos a partir de casos de uso?</p>
+			<div id="resp60" class="resp">
+				<p>Os casos de uso mostram como a funcionalidade será vista pelos atores externos e pelos requisitos, está mais próxima do que será visto implementado e menos de como isso será implementado.</p>
+				<a href="https://tidia4.ufabc.edu.br/access/content/group/c7b1949b-e212-4024-bcb0-b243f24b7395/Aulas%20_slides_/BCC%20ESO%202017.Q1%20Aula%2007%20UML%20v1.0.pdf"> Aula 7 (slide 35)</a>
+			</div>
+			<p onClick="show('res61')">61. O que representa o diagrama de sequencia? E o de estado?</p>
+			<div id="resp61" class="resp">
+				<p>Diagramas de sequência descrevem a sequência de processos (mensagens passadas entre objetos); Diagramas de estado descrevem como o sistema reage a estímulos externos.</p>
+			</div>
+
+		</div>
+<!----------------------FIM DA AULA 07----------------------->
+		<hr></hr>
+<!--------------------COMEÇO DA AULA 08---------------------->
+		<h3 onClick="show('aula08')">Aula VIII - Requisitos de Software. Conceito.</h3>
+		<div id="aula08" class="aula">
+			<p onClick="show('resp62')">62. Quais são as informações de entrada para o gerenciamento de requisitos?</p>
+			<div id="resp62" class="resp">
+				<p>Os requisitos de usuário, o comportamento externo do sistema descrito em linguagem simples.</p>
+				<p class="comentario">Sommerville (p. 85)</p>
+			</div>
+			<p onClick="show('resp63')">63. Descreva  brevemente  os  tipos  de  requisitos  que  podem  ser  definidos  para  um sistema de software.</p>
+			<div id="resp63" class="resp">
+				<p><ul>
+					<li><i>Requisitos funcionais</i>: descrevem o que o sistema deve fazer;</li>
+					<li><i>Requisitios não funcionais</i>: relacionados a propriedades emergentes do sistema, como tempo de resposta, confiabilidade e espaço de armazenamento;</li>
+					<li><i>Requisitos de domínio</i>: derivados do domínio da aplicação e não das necessidades dos usuários, mas podem ser novos requisitos funcionais ou alterá-los.</li>
+				</ul></p>
+				<p class="comentario">Sommerville (p. 82-85)</p>
+			</div>
+			<p onClick="show('resp64')">64. Quais  as  consequências  com  a  ausência  do processo  de  gerenciamento  de requisitos? Existe alguma circunstância em que o mesmo pode não ser realizado?</p>
+			<div id="resp64" class="resp">
+				<p>Os requisitos podem ficar incompletos ou não viáveis e a descoberta disto em fases avançadas do processo pode ser custosa.</p>
+			</div>
+			<p onClick="show('resp65')">65. Aborde os problemas que ocorrem quando os requisitos devem ser obtidos de três ou quatro usuários diferentes.</p>
+			<div id="resp65" class="resp">
+				<p>Os usuários podem passar os requisitos de forma ambígua, de forma que se torne contraditório ou que diversos requisitos diferentes se fundam num mesmo.</p>
+				<p class="comentario">Sommerville (p. 85)</p>
+			</div>
+			<p onClick="show('resp66')">66. Descreva quatro tipos de requisitos não-funcionais que podem ser definidos para um software e os aborde em maiores detalhes.</p>
+			<div id="resp66" class="resp">
+				<p><ul>
+					<li><i>Requisitos de produto</i>: eficiência, portabilidade, confiabilidade;</li>
+					<li><i>Requisitos organizacionais</i>: entrega, implementação, padrões;</li>
+					<li><i>Requisitos externos</i>: éticos, legais;</li>
+				</ul></p>
+			</div>
+			<p onClick="show('resp67')">67. Considerando  o  Projeto  a  ser  desenvolvido  por você  e seu  grupo, utilize os conceitos  da engenharia de  requisitos  para desenvolver os  requisitos (elicitar, analisar, especificar e validar os requisitos do software) e gerenciá-los
+(priorizar e rastrear). Atente  para  a especificação geral (mesmo que incompleta) a partir dos Requisitos  de  Negócios  e  apresente  os requisitos  detalhados (completos) para  a funcionalidade a ser modelada.</p>
+			<div id="resp67" class="resp">
+				<p>.</p>
+			</div>
+		</div>
+<!----------------------FIM DA AULA 08----------------------->
+		<hr></hr>
+<!--------------------COMEÇO DA AULA 09---------------------->
+
+		<h3 onClick="show('aula09')">Aula IX - Gerenciamento de Requisitos. Casos de Uso.</h3>
+		<div id="aula09" class="aula">
+			<p onClick="show('resp68')">68. Um  ator  no  diagrama  de  Casos  de  uso  representa  uma  entidade  externa  com  o 
+qual  o  sistema  interage.  Dê  exemplos  de  atores  para  o  sistema  de  software  que escolheu  para  o  projeto  a  ser  desenvolvido  por  você  e  seu  grupo.  Apresente exemplos de ator que não seja uma pessoa ou área organizacional.</p>
+			<div id="resp68" class="resp">
+				<p>Cliente, funcionário, leitor do código da passagem?</p>
+			</div>
+			<p onClick="show('resp69')">69. Realize  uma  pesquisa  sobre  o  DFD  (Diagrama  de  Fluxo  de  Dados)  e  apresente 
+semelhanças e diferenças deste  com o Diagrama de Casos de Uso</p>
+			<div id="resp69" class="resp">
+				<p>Ambos oferecem uma visão mais prática do sistema, o de caso de uso se baseia em atividades e o DFD se baseia mais nos dados.</p>
+			</div>
+			<p onClick="show('resp70')">70. Pesquise e descreva o comportamento de relacionamento de inclusão, de exclusão e de generalização para o diagrama de casos de uso.</p>
+			<div id="resp70" class="resp">
+				<p>Inclusão relaciona casos de uso, generalização faz com que um caso de uso ou ator herde características de outro, extensão(?) faz com que um caso de uso possa acessar características de outro. (comunicação indica a qual caso de uso o ator está conectado)</p>
+			</div>
+			<p onClick="show('resp71')">71. Desenvolva um caso de uso completo para as atividades<br />
+a. Realizar um saque em um caixa eletrônico<br />
+b. Procurar livros usando uma livraria online<br />
+</p>
+			<div id="resp71" class="resp">
+				<p>.</p>
+			</div>
+			<p onClick="show('resp72')">72. Considerando  o  Projeto  a  ser  desenvolvido  por você  e seu  grupo,
+elabore  o diagrama  de  casos  de  uso  para  a  parte  do  software  que  deverá  desenvolver. O diagrama  deve  oferecer  a  visão  mais completa  do  sistema que foi concebida por você   e   seu   grupo.   O   caso   de   uso   deve   ser   especificado   somente   para   a funcionalidade a ser modelada.</p>
+			<div id="resp72" class="resp">
+				<p>.</p>
+			</div>
+		</div>
+<!----------------------FIM DA AULA 09----------------------->
+		<hr></hr>
+<!--------------------COMEÇO DA AULA 10---------------------->
+
+		<h3 onClick="show('aula10')">Aula X - Análise e Definição do Software. Conceito.</h3>
+		<div id="aula10" class="aula">
+			<p onClick="show('resp73')">73. Em geral os desenvolvedores de software dedicam pouco tempo a fase de Análise e Definição. Quais são as causas e as consequências desta brevidade?</p>
+			<div id="resp73" class="resp">
+				<p>Os requisitos passam com a visão não técnica do cliente.</p>
+			</div>
+			<p onClick="show('resp74')">74. É  possível  não  se  realizar  completamente  a  fase  de  Análise  e    Definição ao  se desenvolver um software? Comente!</p>
+			<div id="resp74" class="resp">
+					<p>.</p>
+			</div>
+			<p onClick="show('resp75')">75. O entendimento do dos requisitos de sistema, a geração dos requisitos de software por  vezes  exige  domínio  do  negócio.  De  que  forma  este  fator  impacta  a  fase  de Análise e Definição do software?</p>
+			<div id="resp75" class="resp">
+					<p>.</p>
+			</div>
+			<p onClick="show('resp76')">76. Qual  ou  quais  são  as  vantagens  de  se  utilizar  um  método  padrão  na  fase  de Análise  e  Definição  do  Software?  Este  método  colabora  com  as  atividades  a serem realizadas nesta fase?</p>
+			<div id="resp76" class="resp">
+					<p>.</p>
+			</div>
+			<p onClick="show('resp77')">77. Qual ou quais são as dificuldades que podem ser verificadas para a representação do produto de software?</p>
+			<div id="resp77" class="resp">
+					<p>.</p>
+			</div>
+		</div>
+<!----------------------FIM DA AULA 10----------------------->
+		<hr></hr>
+<!--------------------COMEÇO DA AULA 11---------------------->
+
+		<h3 onClick="show('aula11')">Aula XI - Análise e Definição do Software. Diagrama de Classe.</h3>
+		<div id="aula11" class="aula">
+			<p onClick="show('resp40')"></p>
+			<div id="resp40" class="resp">
+					<p>.</p>
+			</div>
+		</div>
+<!----------------------FIM DA AULA 11----------------------->
+
+		<script>
+			function show(r){
+				var elem = document.getElementById(r);
+				if (elem.style.display == 'none') {
+					elem.style.display = 'block';
+				} else {
+					elem.style.display = 'none';
+				}
+			}
+		</script>
+	</body>
+</html>

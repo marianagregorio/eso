@@ -1,0 +1,26 @@
+.resp {
+	background-color: #eef;
+	width: 90%;
+	margin-left:3%;
+	display: none;			
+}
+
+.aula {
+	display: none;
+}
+.comentario {
+	color: #888;
+}
+h1{
+	color: #b00;
+	text-align:center;
+}
+
+h3{
+	color: #005;
+	text-align:center;
+}
+hr{
+	color: #eee;
+	width: 100%;
+}
